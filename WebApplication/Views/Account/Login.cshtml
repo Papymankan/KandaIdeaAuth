@@ -1,0 +1,31 @@
+﻿@section Styles {
+	<link href="~/css/Login.css" rel="stylesheet" />
+}
+
+
+<div class="login-container">
+
+	<div class="login-card">
+		<h1 class="title">کندا ایده</h1>
+		<p class="subtitle">تجربه مهندسی خلاق</p>
+
+		<form method="post" action="/Account/Login" class="login-form">
+			<input type="text" name="username" placeholder="نام کاربری" class="input" />
+			<input type="password" name="password" placeholder="کلمه عبور" class="input" />
+			<div class="options">
+				<label>
+					<input type="checkbox" />
+					مرا به خاطر بسپار
+				</label>
+			</div>
+
+			<button type="submit" class="btn-login">ورود به سامانه</button>
+		</form>
+
+		<hr />
+
+		<p class="no-account">آیا حساب کاربری ندارید؟</p>
+		<a href="/Account/Register" class="btn-register">ساخت حساب کاربری</a>
+	</div>
+
+</div>
