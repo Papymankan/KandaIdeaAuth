@@ -2,30 +2,34 @@
 	<link href="~/css/Register.css" rel="stylesheet" />
 }
 
-
 <div class="login-container">
 
 	<div class="login-card">
 		<h1 class="title">کندا ایده</h1>
 		<p class="subtitle">تجربه مهندسی خلاق</p>
 
-		<form method="post" action="/Account/Login" class="login-form">
-			<input type="text" name="username" placeholder="نام کاربری" class="input" />
-			<input type="password" name="password" placeholder="کلمه عبور" class="input" />
-			<div class="options">
-				<label>
-					<input type="checkbox" />
-					مرا به خاطر بسپار
-				</label>
-			</div>
+		<form method="post" action="/Account/Register" class="login-form">
+			<input type="text" name="name" placeholder="نام" class="input" required />
 
-			<button type="submit" class="btn-login">ورود به سامانه</button>
+			<input type="text" name="familyName" placeholder="نام خانوادگی" class="input" required />
+
+			<input type="email" name="email" placeholder="ایمیل" class="input" required />
+
+			<input type="text" name="username" placeholder="نام کاربری" class="input" required />
+
+			<input type="text" name="phone" placeholder="شماره تلفن" class="input" required />
+
+			<input type="password" name="password" placeholder="کلمه عبور" class="input" required />
+
+
+
+			<button type="submit" class="btn-login">ثبت نام</button>
 		</form>
 
 		<hr />
 
-		<p class="no-account">آیا حساب کاربری ندارید؟</p>
-		<a href="/Account/Register" class="btn-register">ساخت حساب کاربری</a>
+		<p class="no-account">قبلاً حساب کاربری دارید؟</p>
+		<a href="/Account/Login" class="btn-register">ورود به سامانه</a>
 	</div>
 
 </div>

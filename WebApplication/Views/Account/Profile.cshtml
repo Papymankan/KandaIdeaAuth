@@ -1,0 +1,24 @@
+﻿@section Styles {
+    <link href="~/css/Login.css" rel="stylesheet" />
+}
+
+<div class="login-container">
+    <div class="login-card">
+        <h1 class="title">پروفایل کاربر</h1>
+        <p class="subtitle">اطلاعات حساب کاربری شما</p>
+
+        <div class="profile-info">
+            <p><strong>نام:</strong> @Model.Name</p>
+            <p><strong>نام خانوادگی:</strong> @Model.FamilyName</p>
+            <p><strong>ایمیل:</strong> @Model.Email</p>
+            <p><strong>نام کاربری:</strong> @Model.Username</p>
+            <p><strong>شماره تماس:</strong> @Model.Phone</p>
+        </div>
+
+        <hr />
+
+        <form method="post" action="/Account/Logout">
+            <button type="submit" class="btn-login">خروج از حساب</button>
+        </form>
+    </div>
+</div>

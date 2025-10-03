@@ -92,3 +92,16 @@ hr {
     .btn-register:hover {
         background: #e5e5e5;
     }
+
+
+.profile-info {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #333;
+}
+
+    .profile-info p {
+        margin: 8px 0;
+        line-height: 1.6;
+    }
